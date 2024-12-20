@@ -1,0 +1,7 @@
+---
+- name: Print variable from inventory
+  hosts: localhost
+  tasks:
+    - name: Print the value of my_variable
+      debug:
+        msg: "{{ my_var }} var1: {{ var1 }}"
